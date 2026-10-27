@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>환율 변환기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>환율 변환기</h1>
+    <label for="amount">금액</label>
+    <input type="number" id="amount" min="0" step="any" inputmode="decimal">
+
+    <label for="from">From</label>
+    <select id="from">
+      <option>USD</option>
+      <option>EUR</option>
+      <option>KRW</option>
+      <option>JPY</option>
+    </select>
+
+    <button id="swap-btn" type="button">통화 교환</button>
+
+    <label for="to">To</label>
+    <select id="to">
+      <option>USD</option>
+      <option>EUR</option>
+      <option selected>KRW</option>
+      <option>JPY</option>
+    </select>
+
+    <button id="convert">통화변환</button>
+    <p id="result" aria-live="polite"></p>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
